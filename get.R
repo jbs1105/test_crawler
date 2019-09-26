@@ -6,14 +6,14 @@ library(dplyr)
 
 # tar <- "https://news.joins.com/politics/assemgov/list/1?filter=OnlyJoongang&date=2019-09-06"
   
-max_page <- function(tar_url) {
-  read_html(tar_url) %>% 
-    html_nodes("div.page a") %>% 
-    html_text() %>% 
-    regexpr("(^[0-9]*$)") %>% 
-    as.numeric() %>% 
-    max()
-}
+# max_page <- function(tar_url) {
+#   read_html(tar_url) %>% 
+#     html_nodes("div.page a") %>% 
+#     html_text() %>% 
+#     regexpr("(^[0-9]*$)") %>% 
+#     as.numeric() %>% 
+#     max()
+# }
 
 max_page1 <- function(tar_url) {
   read_html(tar_url) %>% 
